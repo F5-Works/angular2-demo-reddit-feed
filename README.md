@@ -17,5 +17,5 @@ npm install
 ## Start Server
 
 ```bash
-npm run server
+npm run start
 ```
