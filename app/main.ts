@@ -4,8 +4,5 @@ import {HTTP_PROVIDERS} from 'angular2/http';
 
 import 'rxjs/add/operator/map';
 
-bootstrap(RedditFeed, [...HTTP_PROVIDERS]);
+bootstrap(RedditFeed, [...HTTP_PROVIDERS]).catch(err => console.error(err));
 
-document.addEventListener('DOMContentLoaded', () => {
-  bootstrap(RedditFeed, [...HTTP_PROVIDERS]).catch(err => console.error(err));
-});
